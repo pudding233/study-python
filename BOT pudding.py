@@ -8,7 +8,7 @@ intchushi = int(chushi) #初始值int转换
 if intchushi == 1 or intchushi == 2: #判断值是不是1或者2，如果是1或者2返回True
     if intchushi == 1: #判断值是不是1，如果是1返回Ture
         caice = input("qwq猜猜我想的是什么数字吧?")
-        suiji = random.randint(1,2) #一个从1到10的随机数字（包括1和10）
+        suiji = random.randint(1,10) #一个从1到10的随机数字（包括1和10）
         while caice !=suiji:
             caice = input("再试一试？猜猜布丁想的是什么数字")
             caice = int(caice)
@@ -35,4 +35,4 @@ else: #初始输入的值不是1或者2就运行这里
     if intchushi == 3: #如果是3就退出程序
         print ("程序退出")
     else: #啥都不是输出这里
-        print ("你输入些什么!?") #貌似可以在这里加个循环功能
+        print ("你输入了些什么!?") #貌似可以在这里加个循环功能
